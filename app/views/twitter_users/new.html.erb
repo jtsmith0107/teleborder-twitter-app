@@ -1,0 +1,10 @@
+<div class='jumbotron'>
+    <h3><span class="label label-default">Find User</span></h3>
+<form action="/twitter_users" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label ><br>
+        <input class="user-input" name="user[name]" type="text" placeholder='Name'><br>
+  </label><br>
+
+  <input type="submit" value="Submit" class="btn btn-default"><br>
+</form>

@@ -1,0 +1,17 @@
+<div class='jumbotron'>
+    <h3><span class="label label-default">Sign In</span></h3>
+<form action="/session" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label ><br>
+        <input class="user-input" name="user[email]" type="text" placeholder='Email'><br>
+  </label><br>
+  <label >
+    <input class="user-input" name="user[password]" type="password" placeholder='Password'><br>
+  </label><br>
+  <input id="create-user" type="submit" value="Submit" class="btn btn-default"><br>
+</form>
+<%= button_to "Need to Sign Up?", new_user_url, method: :get, class: 'btn btn-default'%>
+
+</div>
+
+
