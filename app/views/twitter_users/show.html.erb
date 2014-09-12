@@ -1,0 +1,8 @@
+<h3><span class="label label-default"><%= @twitter_user.name %></span></h3>
+
+<ul class=list-group>
+  <% @twitter_user.tweets.each do |tweet| %>
+    <li class='list-group-item'><%= tweet.body %></li>
+  <% end %>
+</ul>
+  

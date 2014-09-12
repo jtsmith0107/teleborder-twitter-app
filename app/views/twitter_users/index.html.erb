@@ -1,7 +1,19 @@
 <h3><span class="label label-default">Twitter Users List</span></h3>
 
-<ul class=list-group>
+
+<form action='/common_followers', method='GET'>
+
+
 <% @twitter_users.each do |user| %>
-  <li class='list-group-item'><%= user.name %></li>
+  <%= check_box_tag(:user1) %>
+  <%= link_to user.name, twitter_user_url(user) %>
+  
+  <br>
 <% end %>
-</ul> 
+
+
+<h4>Select two boxes to compare followers</h4>
+<input type='submit' class='submit'>
+</form>
+
+

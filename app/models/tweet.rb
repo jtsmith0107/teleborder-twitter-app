@@ -11,4 +11,6 @@
 
 class Tweet < ActiveRecord::Base
   validates :body, :twitter_user_id, presence: true
+  
+  belongs_to :twitter_user
 end
