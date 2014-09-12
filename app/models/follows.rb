@@ -10,5 +10,5 @@
 #
 
 class Follows < ActiveRecord::Base
-  validates follower_id, followee_id, presence: true
+  validates :follower_id, :followee_id, presence: true
 end
