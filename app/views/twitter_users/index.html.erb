@@ -5,7 +5,7 @@
 
 
 <% @twitter_users.each do |user| %>
-  <%= check_box_tag(:user1) %>
+  <%= check_box_tag('users[]', user.name ) %>
   <%= link_to user.name, twitter_user_url(user) %>
   
   <br>

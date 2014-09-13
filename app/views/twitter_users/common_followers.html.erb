@@ -1,0 +1,9 @@
+<h3><span class="label label-default">Common Followers List</span></h3>
+
+<% @common_followers.each do |user| %>
+  <%= link_to user.name, twitter_user_url(user) %>  
+  <br>
+<% end %>
+
+
+
